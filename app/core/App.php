@@ -28,6 +28,10 @@ class App
                 $this->method= $url[1];
                 unset($url[1]);
             }
+            else
+             {
+                die('method '.$url[1] .' Est Introuvable vérifier si vous etes bien le nom de method');
+             }
         }
         $this->params = $url ? array_values($url) : [];
 
